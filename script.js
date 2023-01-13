@@ -20,9 +20,9 @@ function viewCount() {
     if (!localStorage.getItem("views")) localStorage.setItem("views", 1);
     else {
         views = +localStorage.getItem("views");
-        const incrementedCount = views + 1;
+        const newCount = views + 1;
 
-        localStorage.setItem("views", incrementedCount);
+        localStorage.setItem("views", newCount);
     }
 
     count.innerText = localStorage.getItem("views");
