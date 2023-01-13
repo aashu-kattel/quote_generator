@@ -43,3 +43,12 @@
     color: #000000;
     cursor: pointer;
   }
+  h2 {
+    font-family: 'Couriere New', monospace;
+    padding : 0 0 0 75px;
+  }
+  
+  h4 {
+    font-family: 'Couriere New', monospace;
+    padding : 10px 0 0 40px;
+  }
