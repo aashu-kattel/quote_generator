@@ -1,3 +1,12 @@
+let docTitle = document.title;
+window.addEventListener("blur",()=>{
+    document.title = 'Get back here ... ';
+});
+
+window.addEventListener("focus",()=>{
+    document.title = docTitle;
+});
+
 let quote = document.getElementById("quote");
 let author = document.getElementById("author");
 let btn = document.getElementById("btn");
