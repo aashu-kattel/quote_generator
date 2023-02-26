@@ -43,8 +43,8 @@
     color: #000000;
     cursor: pointer;
   }
-  .container button:hover {
-      background-color: #e0e38a;
+ .container button:hover {
+    background-color: #e0e38a;
   }
   h2 {
     font-family: 'Couriere New', monospace;
