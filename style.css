@@ -44,7 +44,7 @@
     cursor: pointer;
   }
   .container button:hover {
-   background-color: #e0e38a;
+      background-color: #e0e38a;
   }
   h2 {
     font-family: 'Couriere New', monospace;
