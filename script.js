@@ -2,7 +2,6 @@ let docTitle = document.title;
 window.addEventListener("blur",()=>{
     document.title = 'Get back here ... ';
 });
-
 window.addEventListener("focus",()=>{
     document.title = docTitle;
 });
@@ -30,10 +29,8 @@ function viewCount() {
     else {
         views = +localStorage.getItem("views");
         const newCount = views + 1;
-
         localStorage.setItem("views", newCount);
     }
-
     count.innerText = localStorage.getItem("views");
 }
 viewCount();
