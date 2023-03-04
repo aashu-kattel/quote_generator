@@ -22,9 +22,7 @@ let genQuote = () => {
 btn.addEventListener("click", genQuote);
 
 const count = document.getElementById("count");
-
 function viewCount() {
-
     if (!localStorage.getItem("views")) localStorage.setItem("views", 1);
     else {
         views = +localStorage.getItem("views");
