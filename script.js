@@ -21,6 +21,10 @@ let genQuote = () => {
 
 btn.addEventListener("click", genQuote);
 
+function copyQuote() {
+    alert("Copied to clipboard");
+}
+
 const count = document.getElementById("count");
 function viewCount() {
     if (!localStorage.getItem("views")) localStorage.setItem("views", 1);
