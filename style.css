@@ -46,6 +46,19 @@
  .container button:hover {
     background-color: #e0e38a;
   }
+   #btn2 {
+    background-color: #ecd1d1;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 9px;
+    font-weight: 300;
+    color: #000000;
+    cursor: pointer;
+  }
+  #btn2:hover {
+    background-color: #b5e6ee;
+  }
   h2 {
     font-family: 'Couriere New', monospace;
     padding : 0 0 0 75px;
