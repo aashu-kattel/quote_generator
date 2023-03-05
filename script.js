@@ -24,17 +24,6 @@ copyBtn.addEventListener("click", () => {
     }
 });
 
-let copyQuote = () => { 
-    let text = document.getElementById("quote").innerText;
-    let textArea = document.createElement("textarea");
-    textArea.value = text;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    textArea.remove(); 
-    alert("Quote copied to clipboard");
-};
-
 const count = document.getElementById("count");
 function viewCount() {
     if (!localStorage.getItem("views")) localStorage.setItem("views", 1);
