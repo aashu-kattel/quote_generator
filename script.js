@@ -2,13 +2,10 @@ let docTitle = document.title;
 window.addEventListener("blur",()=>{
     document.title = 'Get back here ... ';
 });
+
 window.addEventListener("focus",()=>{
     document.title = docTitle;
 });
-
-let quote = document.getElementById("quote");
-let author = document.getElementById("author");
-let btn = document.getElementById("btn");
 
 let genQuote = () => {
   fetch(`https://api.quotable.io/random`)
@@ -18,12 +15,25 @@ let genQuote = () => {
       author.innerText = item.author;
     });
 };
-
 btn.addEventListener("click", genQuote);
 
-function copyQuote() {
-    alert("Copied to clipboard");
-}
+let copyBtn = document.getElementById("btn2");
+copyBtn.addEventListener("click", () => {
+    if (quote.innerText == "") {
+        alert("Please generate a quote first.");
+    }
+});
+
+let copyQuote = () => { 
+    let text = document.getElementById("quote").innerText;
+    let textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    textArea.remove(); 
+    alert("Quote copied to clipboard");
+};
 
 const count = document.getElementById("count");
 function viewCount() {
@@ -31,6 +41,7 @@ function viewCount() {
     else {
         views = +localStorage.getItem("views");
         const newCount = views + 1;
+
         localStorage.setItem("views", newCount);
     }
     count.innerText = localStorage.getItem("views");
