@@ -24,6 +24,19 @@ copyBtn.addEventListener("click", () => {
     }
 });
 
+copyBtn.addEventListener("click", () => {
+    if (!quote.innerText == "") {
+    let text = document.getElementById("quote").innerText;
+    let textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    textArea.remove();
+    alert("Copied to clipboard");
+    }
+});
+
 const count = document.getElementById("count");
 function viewCount() {
     if (!localStorage.getItem("views")) localStorage.setItem("views", 1);
