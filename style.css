@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "verdana", sans-serif;
   }
+  
   .modal {
     display: none;
     position: fixed;
@@ -56,11 +57,12 @@
       padding: 5px 10px;
     }
   }
-
+  
   body {
     background-color: #3077bd;
   }
-  .wrapper {
+
+.wrapper {
   width: 26.041666666666668vw;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -136,7 +138,7 @@
   
   h2 {
     font-family: 'Couriere New', monospace;
-    padding : 0 0 0 75px;
+    padding : 0 0 0 69px;
   }
   
   h4 {
