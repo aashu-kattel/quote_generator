@@ -61,59 +61,78 @@
     background-color: #3077bd;
   }
   .wrapper {
-    width: 400px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-  .box {
-    width: 100%;
-    background-color: #3d389d;
-    padding: 50px 40px;
-    box-shadow: 0 20px 65px rgba(255, 255, 255, 0.5);
-    position: relative;
-    border-radius: 8px;
-    text-align: center;
-  }
-  .box p {
-    color: #fdd8d8;
-    line-height: 1.5;
-    font-size: 18px;
-  }
-  .box h3 {
-    color: #ff8b8b;
-    margin: 25px 0 65px 0;
-    font-weight: 600;
-  }
-  .box button {
-    background-color: #ecd1d1;
-    border: none;
-    padding: 10px 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #000000;
-    cursor: pointer;
-  }
-  .box button:hover {
-    background-color: #e0e38a;
-  }
+  width: 26.041666666666668vw;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
 
-  #btn2 {
-    background-color: #ecd1d1;
-    border: none;
-    padding: 5px 20px;
-    border-radius: 5px;
-    font-size: 9px;
-    font-weight: 300;
-    color: #000000;
-    cursor: pointer;
+.container {
+  width: 100%;
+  background-color: #3d389d;
+  padding: 50px 40px;
+  box-shadow: 0 20px 65px rgba(255, 255, 255, 0.5);
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.container p {
+  color: #fdd8d8;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.container h3 {
+  color: #ff8b8b;
+  margin: 25px 0 65px 0;
+  font-weight: 600;
+}
+
+.container button {
+  background-color: #ecd1d1;
+  border: none;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #e0e38a;
+}
+
+#btn2 {
+  background-color: #ecd1d1;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 9px;
+  font-weight: 300;
+  color: #000000;
+  cursor: pointer;
+}
+
+#btn2:hover {
+  background-color: #b5e6ee;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
   }
-  #btn2:hover {
-    background-color: #b5e6ee;
+  
+  .container {
+    padding: 20px;
   }
+}
   
   h2 {
     font-family: 'Couriere New', monospace;
