@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "verdana", sans-serif;
   }
-.modal {
+  .modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -41,6 +41,22 @@
     text-decoration: none;
     cursor: pointer;
   }
+  
+  @media screen and (max-width: 768px) {
+    .display-message {
+      width: 80%;
+      height: 80%;
+      margin: 5% auto;
+      padding: 70px 35px;
+    }
+    .close {
+      top: 10%;
+      right: 10%;
+      font-size: 20px;
+      padding: 5px 10px;
+    }
+  }
+
   body {
     background-color: #3077bd;
   }
