@@ -14,7 +14,7 @@
     top: 50%;
     left: 50%;
   }
-  .container {
+  .box {
     width: 100%;
     background-color: #3d389d;
     padding: 50px 40px;
@@ -23,17 +23,17 @@
     border-radius: 8px;
     text-align: center;
   }
-  .container p {
+  .box p {
     color: #fdd8d8;
     line-height: 1.5;
     font-size: 18px;
   }
-  .container h3 {
+  .box h3 {
     color: #ff8b8b;
     margin: 25px 0 65px 0;
     font-weight: 600;
   }
-  .container button {
+  .box button {
     background-color: #ecd1d1;
     border: none;
     padding: 10px 10px;
@@ -44,7 +44,7 @@
     color: #000000;
     cursor: pointer;
   }
-  .container button:hover {
+  .box button:hover {
     background-color: #e0e38a;
   }
 
