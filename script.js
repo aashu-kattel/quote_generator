@@ -7,6 +7,20 @@ window.addEventListener("focus",()=>{
     document.title = docTitle;
 });
 
+window.onload = function() {
+    var modal = document.getElementById('popModal');
+    var span = document.getElementsByClassName('close')[0];
+    modal.style.display = "block";
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
 let genQuote = () => {
   fetch(`https://api.quotable.io/random`)
     .then((data) => data.json())
