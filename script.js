@@ -34,7 +34,11 @@ btn.addEventListener("click", genQuote);
 let copyBtn = document.getElementById("btn2");
 copyBtn.addEventListener("click", () => {
     if (quote.innerText == "") {
-        alert("Please generate a quote first.");
+        Swal.fire({
+            icon: 'error',
+            title: 'Could not copy!',
+            text: 'Generate a quote first!'
+          })
     }
 });
 
@@ -47,7 +51,11 @@ copyBtn.addEventListener("click", () => {
     textArea.select();
     document.execCommand("copy");
     textArea.remove();
-    alert("Copied to clipboard");
+     Swal.fire(
+        'Copied to clipboard!',
+        '',
+        'success'
+      );
     }
 });
 
